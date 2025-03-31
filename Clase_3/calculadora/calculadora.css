@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-color: #bf4d5d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculator {
+    max-width: 360px;
+    background-color: #0d1b2a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+#display {
+    width: 100%;
+    height: 56px;
+    font-size: 20px;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: #e0e1dd;
+    background-color: rgba(13, 27, 42, 0.3);
+    border: none;
+    box-sizing: border-box;
+}
+
