@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #bf4d5d;
+    background-color: #c6aeb1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,3 +30,32 @@ body {
     box-sizing: border-box;
 }
 
+.operator {
+    color: #f20a0a;
+}
+
+#ac {
+    color: #7cc60c;
+}
+
+.equal {
+    width: calc(50% - 10px);
+}
+
+button {
+    width: calc(25% - 10px);
+    height: 50px;
+    font-size: 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    float: left;
+    background-color: rgb(13, 27, 42);
+    color: #e0e1dd;
+    -webkit-box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
+    -moz-box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
+    box-shadow: -1px 1px 30px -5px rgba(0,0,0,0.2);
+
+
+
+}
