@@ -1,6 +1,6 @@
 
 const input = document.getElementById("nombrePokemon");
-const btnBuscar = document.getElementById("buscar");
+const form = document.querySelector("form");
 const main = document.getElementById('mainContent');
 
 
@@ -25,9 +25,12 @@ async function getData(nombre) {
 }
 
 
-btnBuscar.addEventListener('click', async () => {
+form.addEventListener('submit', async (e) => {
+    e.preventDefault(); //evita que se recarge la pagina
+
     const nombre = input.value.toLowerCase();
     const data = await getData(nombre);
+    
 
     // Eliminar tarjetas anteriores antes de agregar una nueva
     main.innerHTML = "";
@@ -49,5 +52,5 @@ btnBuscar.addEventListener('click', async () => {
     `;
 
     main.appendChild(section);
-    input.value = "";
+    input.value ="";
 });
